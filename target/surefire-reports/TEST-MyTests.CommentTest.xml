@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyTests.SentTest" time="90.731" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="MyTests.CommentTest" time="84.689" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_40\jre\bin"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="test" value="MyTests.SentTest"/>
+    <property name="test" value="MyTests.CommentTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\QA-academyExercises\miniSMART_StoreSteamPowered"/>
     <property name="java.runtime.version" value="1.8.0_40-b26"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_40\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=MyTests.SentTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=MyTests.CommentTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="ru"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,15 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="xTest" classname="MyTests.SentTest" time="90.731">
-    <failure message="Element not found in the cache - perhaps the page has changed since it was looked up&#10;Command duration or timeout: 30.02 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EILA&apos;, ip: &apos;10.193.1.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 30.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EILA', ip: '10.193.1.59', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32 expected [true] but found [false]
+  <testcase name="xTest" classname="MyTests.CommentTest" time="84.689">
+    <failure message="null expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: null expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
@@ -105,57 +98,39 @@ Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32 expected [true] but found [fals
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </failure>
     <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
-17:05:41,457  INFO - browser driver was constructed
-17:05:41,459  INFO - Browser 'firefox' ready...
-17:05:41,576  INFO - --------------------------------------------------------------------------
-17:05:41,577  INFO - =====================  Test case: 'MyTests.SentTest' =====================
-17:05:41,577  INFO - --------------------------------------------------------------------------
-17:05:41,577  INFO - --------==[ Preconditions ]==--------
-17:05:50,328  INFO - Form 'main page' appears in 4621msec
-17:05:50,531  INFO - Button 'Enter button on main page' :: Clicking
-17:05:51,379  INFO - Text Field 'null' :: Typing 'AlexandrZalamay'
-17:05:53,345  INFO - Text Field 'null' :: Typing '12312345'
-17:05:53,757  INFO - Button 'null' :: Clicking
-17:05:57,454  INFO - Button 'null' :: Clicking
-17:06:02,440  INFO - --------==[ Step 1 ]==--------
-17:06:02,440  INFO - --------==[ Go write letter ]==--------
-17:06:03,744  INFO - Form 'Email Page' appears in 1265msec
-17:06:03,870  INFO - Button 'null' :: Clicking
-17:06:04,182  INFO - --------==[ Step 2 ]==--------
-17:06:04,182  INFO - --------==[ Write letter ]==--------
-17:06:06,095  INFO - Form 'Write letter' appears in 1883msec
-17:06:06,201  INFO - Button 'null' :: Clicking
-17:06:07,600  INFO - Button 'null' :: Clicking
-17:06:08,292  INFO - Button 'null' :: Clicking
-17:06:09,089  INFO - Text Field 'null' :: Typing 'theme'
-17:06:09,274  INFO - Text Field 'null' :: Typing 'letter'
-17:06:09,531  INFO - --------==[ Step 3 ]==--------
-17:06:09,531  INFO - --------==[ Take my email and sent letter myself ]==--------
-17:06:09,654  INFO - Button 'null' :: Clicking
-17:06:10,329  INFO - Form 'See get letter' appears in 116msec
-17:06:10,329  INFO - --------==[ Step 4 ]==--------
-17:06:10,329  INFO - --------==[ See new letter and delete ]==--------
-17:06:10,428  INFO - Button 'null' :: Clicking
-17:06:10,945  INFO - Label 'null' :: is present : false
-17:06:42,277  WARN - Label 'null' :: Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 30.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EILA', ip: '10.193.1.59', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32
-17:07:12,292  WARN - 
-17:07:12,292  WARN - >>>>>>>> TEST FAILED <<<<<<<<
-17:07:12,292  WARN - 
-17:07:12,294 FATAL - Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 30.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EILA', ip: '10.193.1.59', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32
+16:20:26,526  INFO - browser driver was constructed
+16:20:26,573  INFO - Browser 'firefox' ready...
+16:20:29,126  INFO - -----------------------------------------------------------------------------
+16:20:29,126  INFO - =====================  Test case: 'MyTests.CommentTest' =====================
+16:20:29,126  INFO - -----------------------------------------------------------------------------
+16:20:29,126  INFO - --------==[ Preconditions ]==--------
+16:20:31,267  INFO - --------==[ Step 1 ]==--------
+16:20:31,267  INFO - --------==[ Go to film's page ]==--------
+16:20:43,797  INFO - Form 'main page' appears in 11851msec
+16:20:44,006  INFO - Button 'null' :: Clicking
+16:20:47,422  INFO - --------==[ Step 2 ]==--------
+16:20:47,422  INFO - --------==[ Use online film ]==--------
+16:20:48,319  INFO - Form 'Film's page' appears in 769msec
+16:20:48,440  INFO - Button 'null' :: Clicking
+16:20:54,224  INFO - Button 'null' :: Clicking
+16:20:54,713  INFO - --------==[ Step 3 ]==--------
+16:20:54,714  INFO - --------==[ Rer for comment ]==--------
+16:21:08,155  INFO - Button 'null' :: Clicking
+16:21:09,186  INFO - Text Field 'null' :: Typing 'AlexandrZalamay'
+16:21:17,220  INFO - Text Field 'null' :: Typing '12312345'
+16:21:18,041  INFO - Button 'null' :: Clicking
+16:21:19,100  INFO - --------==[ Step 4 ]==--------
+16:21:19,101  INFO - --------==[ Short comment ]==--------
+16:21:26,855  INFO - Button 'null' :: is present : false
+16:21:47,273  INFO - Button 'null' :: Clicking
+16:21:49,231  INFO - Text Field 'null' :: Clicking
+16:21:50,421  INFO - Text Field 'null' :: Typing 'Nice film, very very interesting! I recomendet!'
+16:21:53,101  INFO - Button 'null' :: Clicking
+16:21:53,717  INFO - Button 'null' :: is present : false
+16:21:53,748  WARN - 
+16:21:53,748  WARN - >>>>>>>> TEST FAILED <<<<<<<<
+16:21:53,748  WARN - 
+16:21:53,748 FATAL - null
 ]]></system-out>
   </testcase>
 </testsuite>

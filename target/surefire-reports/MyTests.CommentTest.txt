@@ -1,16 +1,9 @@
 -------------------------------------------------------------------------------
-Test set: MyTests.SentTest
+Test set: MyTests.CommentTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 104.413 sec <<< FAILURE! - in MyTests.SentTest
-xTest(MyTests.SentTest)  Time elapsed: 90.731 sec  <<< FAILURE!
-java.lang.AssertionError: Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 30.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EILA', ip: '10.193.1.59', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1ad5b427-55eb-464f-8794-c611ef8a6f32 expected [true] but found [false]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 107.052 sec <<< FAILURE! - in MyTests.CommentTest
+xTest(MyTests.CommentTest)  Time elapsed: 84.689 sec  <<< FAILURE!
+java.lang.AssertionError: null expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)

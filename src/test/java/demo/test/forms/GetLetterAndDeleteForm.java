@@ -12,15 +12,15 @@ import webdriver.elements.TextBox;
 public class GetLetterAndDeleteForm extends BaseForm {
     
     public Button btrIncoming = new Button(By.xpath("html/body/div[2]/div/div[5]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/a[2]"));
-    public Label btrChek = new Label(By.xpath("//label[@class='b-messages-head__title']"));
+    public Label labChek = new Label(By.xpath("//label[@class='b-messages-head__title']"));
     public Button btrDelete = new Button (By.xpath("//span[@class='b-toolbar__item__label js-toolbar-item-title-delete']"));
     
     public void SeeLetterAndDelete() {
       btrIncoming.click();
       
-      btrChek.isPresent();
-      btrChek.moveToElement();
-      btrChek.click();
+      labChek.isPresent();
+      labChek.moveToElement();
+      labChek.click();
     
       btrDelete.moveToElement();
       btrDelete.click();

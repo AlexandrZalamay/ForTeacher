@@ -38,13 +38,16 @@ public class SentTest extends BaseTest {
         mainForm.login(null, null);        
         mainForm.goToMail(); 
           
-        logger.stepInfo(1, "Sent letter");
+        logger.stepInfo(1, "Go write letter");
         EmailForm emailForm = new EmailForm();
-        emailForm.clickWriteLetter();        
+        emailForm.clickWriteLetter(); 
+        logger.stepInfo(2, "Write letter");
         WriteLetterForm writeLetter = new WriteLetterForm();       
         writeLetter.EnterDataLetter("theme", "letter");
+        logger.stepInfo(3, "Take my email and sent letter myself");
         writeLetter.ClickSent();
         GetLetterAndDeleteForm GLADF = new GetLetterAndDeleteForm();
+        logger.stepInfo(4, "See new letter and delete");
         GLADF.SeeLetterAndDelete();
         
         

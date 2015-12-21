@@ -18,6 +18,7 @@ public class MainForm extends BaseForm {
     public TextBox txtMyName = new TextBox(By.xpath("//span[@class = 'uname']"));
     public Button btnMail = new Button(By.xpath("//a[@href='http://mail.tut.by/#ua:top_menu_www.tut.by~1']"));
     public Button btnJob = new Button(By.xpath("//a[@href='http://jobs.tut.by/#ua:top_menu_www.tut.by~7']"));
+    public Button btnAfisha = new Button(By.xpath("//a[@href='http://afisha.tut.by/#ua:top_menu_www.tut.by~5']"));
     
     public void login(String login, String password){
         btnEnter.click();
@@ -38,6 +39,10 @@ public class MainForm extends BaseForm {
     
     public void goToJob (){
         btnJob.clickAndWait();
+    }
+    
+    public void goToAfisha(){
+        btnAfisha.clickAndWait();
     }
             
     public MainForm() {

@@ -19,6 +19,11 @@ public class JobSearchTest extends BaseTest {
         searchJob.EnterSearch("Бухгалтер");
         logger.stepInfo(3, "Change data search");
         searchJob.ChangeExpierence();
+        searchJob.ChangeTime();
+        logger.stepInfo(4, "See job that we find");
+        searchJob.FindWork();
+        logger.stepInfo(5, "See Reg Form");
+        searchJob.SeeRegForm();
     }
     
 }
